@@ -1,4 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 17: Basic Authentication
+![cf](https://i.imgur.com/7v5ASc8.png) Lab 16: Basic Authentication
 ======
 
 ## Submission Instructions
