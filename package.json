@@ -16,7 +16,10 @@
     "mongoose": "^5.0.17",
     "superagent": "^3.8.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "http-error": "0.0.6",
+    "logger": "0.0.1"
+  },
   "scripts": {
     "test": "jest"
   },
