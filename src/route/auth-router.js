@@ -24,4 +24,10 @@ authRouter.post('/signup',jsonParser,(request,response,next=>{
     .catch(next);
 }));
 
+authRouter.post('/login',jsonParser,(request,response,next=>{
+    if(request.body.username===account.username&&request.body.password===account.password)
+    {logger.log(logger.INFO,'Account Logged in.')
+        return account.pCreateToken()}
+}))
+
 export default authRouter;

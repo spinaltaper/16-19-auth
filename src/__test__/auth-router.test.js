@@ -7,7 +7,7 @@ import { pCreateAccountMock, pRemoveAccountMock } from './lib/account-mock';
 const apiURL= `http://localhost:${process.env.PORT}`;
 
 describe ('AUTH Router', ()=>{
-    beforeAl(startServer);
+    beforeAll(startServer);
     afterAll(stopServer);
     afterEAch(pRemoveAccountMock);
 

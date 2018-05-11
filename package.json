@@ -4,6 +4,8 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 16: Basic Authentication\r ======",
   "main": "index.js",
   "dependencies": {
+    "aws": "0.0.3-2",
+    "aws-sdk": "^2.237.1",
     "babel-eslint": "^8.2.3",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
