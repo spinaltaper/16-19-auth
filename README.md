@@ -21,7 +21,7 @@ Configure the root of your repository with the following files and directories. 
 * **.eslintignore** - contains the course linter ignore configuration
 * **package.json** - contains npm package config
   * create a `test` script for running tests
-  * create `dbon` and `dboff` scripts for managing the mongo daemon
+  * create `toudbon` and `dboff` scripts for managing the mongo daemon
 * **db/** - contains mongodb files **(should be git ignored)**
 * **index.js** - entry-point of the application
 * **src/** - contains the remaining code
@@ -48,3 +48,14 @@ Create a user `Account` model that keeps track of a username, email, hashed pass
 
 ## Documentation
 In the README.md write documentation for starting your server and making requests to each endpoint it provides. The documentation should describe how the server would respond to valid and invalid requests.
+
+Start server: import {startServer} from lib/server
+use function startServer
+
+Stop server: import {stopServer} from lib/server
+use function stopServer
+
+The endpoints are /profiles, /signup & /login
+
+Invalid requests will vary depending on the endpoint, but /pofiles for instance responds with a 400 and an error message regarding the incorrect account, or a profile object and a 200 if the request was correctly done.
+/signup returns a token validating the usre.
